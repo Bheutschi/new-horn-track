@@ -8,7 +8,7 @@ import {
 } from "./list";
 
 const meta: Meta<typeof ListPC> = {
-    title: "Pages/Liste des PC",
+    title: "pages/Liste des PC",
     component: ListPC,
     parameters: {
         layout: "fullscreen",

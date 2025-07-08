@@ -8,7 +8,7 @@ import {
 } from "./borrow-pc";
 
 const meta: Meta<typeof Pret> = {
-    title: "Pages/Prêt de PC",
+    title: "pages/Prêt de PC",
     component: Pret,
     parameters: {
         layout: "fullscreen",

@@ -8,7 +8,7 @@ import {
 } from "./dashboard";
 
 const meta: Meta<typeof Dashboard> = {
-    title: "Pages/Dashboard",
+    title: "pages/Dashboard",
     component: Dashboard,
     parameters: {
         layout: "fullscreen",
