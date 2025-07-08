@@ -2,7 +2,7 @@ import * as React from "react"
 
 import {
     cn
-} from "@/lib/utils"
+} from "../../../lib/utils"
 
 import {
     cva
@@ -51,7 +51,7 @@ function CardContent({className, ...props}: React.ComponentProps<"div">) {
         <div
             data-slot="card-content"
             className={cn(
-                "flex flex-col items- justify-center w-full h-full gap-6",
+                "flex flex-col items-center justify-center w-full h-full gap-6",
                 className
             )}
             {...props}

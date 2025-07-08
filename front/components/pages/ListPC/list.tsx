@@ -22,7 +22,7 @@ import {
 
 import {
     Button
-} from "@/components/ui/Button/button";
+} from "../../ui/Button/button";
 
 import {
     Table,
@@ -31,16 +31,16 @@ import {
     TableHead,
     TableHeader,
     TableRow
-} from "@/components/ui/Table/table";
+} from "../../ui/Table/table";
 
 import {
     Badge
-} from "@/components/ui/Badge/badge";
+} from "../../ui/Badge/badge";
 
 import {
     Card,
     CardContent
-} from "@/components/ui/Card/card";
+} from "../../ui/Card/card";
 
 export function ListPC() {
     return (

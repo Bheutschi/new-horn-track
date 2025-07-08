@@ -30,7 +30,7 @@ import {
 import {
     ChartConfig,
     ChartPie
-} from "@/components/ui/Pie Chart/pie-chart";
+} from "../../ui/Pie Chart/pie-chart";
 
 import {
     House,
@@ -154,7 +154,6 @@ export function Dashboard() {
                 <div className="flex flex-col justify-center items-center gap-20">
                     <Card>
                         <Title>PC en cours de prêt</Title>
-                        <Title size="thirdary" className="font-bold">Total: 4</Title>
                         <CardContent>
                             <Table className="w-full">
                                 <TableHeader>

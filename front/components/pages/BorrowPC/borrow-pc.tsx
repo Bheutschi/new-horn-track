@@ -5,10 +5,13 @@ import {
 
 import {
     Sidebar,
-    SidebarContent, SidebarFooter,
+    SidebarContent,
+    SidebarFooter,
     SidebarGroup,
     SidebarGroupContent,
-    SidebarMenu, SidebarMenuButton, SidebarMenuItem,
+    SidebarMenu,
+    SidebarMenuButton,
+    SidebarMenuItem,
     SidebarProvider
 } from "../../ui/SideBar/sidebar";
 
@@ -25,11 +28,11 @@ import {
 
 import {
     Input
-} from '@/components/ui/Input/input';
+} from '../../ui/Input/input';
 
 import {
     Button
-} from "@/components/ui/Button/button";
+} from "../../ui/Button/button";
 
 export function Pret() {
     return (
@@ -82,7 +85,7 @@ export function Pret() {
             {/* 📊 Content */}
             <div className="flex flex-col flex-1 w-full py-5 px-4 overflow-y-auto gap-10 justify-center items-center">
                 <Title>Prêter un ordinateur</Title>
-                <div className="flex flex-cols items-center justify-center w-fit">
+                <div className="flex flex-col items-center justify-center w-fit">
                     <Card>
                         <CardContent>
                             <Input label="UUID"/>
