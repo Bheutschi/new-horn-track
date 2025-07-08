@@ -1,0 +1,21 @@
+<?php
+
+return [
+
+    'azure' => [
+        'client_id' => env('AZURE_CLIENT_ID'),
+        'client_secret' => env('AZURE_CLIENT_SECRET'),
+        'redirect' => env('AZURE_REDIRECT_URI'),
+        'tenant' => env('AZURE_TENANT_ID'),
+    ],
+
+    'msgraph' => [
+        'client_id' => env('MS_GRAPH_CLIENT_ID'),
+        'client_secret' => env('MS_GRAPH_SECRET'),
+        'tenant' => env('MS_GRAPH_TENANT_ID'),
+    ],
+    'umami' => [
+        'script_url' => env('UMAMI_SCRIPT_URL', 'https://umami.in.jt-lab.ch/script.js'),
+        'website-id' => env('UMAMI_WEBSITE_ID', '1e8af30b-455a-481c-bc08-25c4b6577912'),
+    ],
+];

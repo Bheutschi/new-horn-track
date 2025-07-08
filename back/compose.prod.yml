@@ -1,0 +1,54 @@
+services:
+  php-server:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    ports:
+      - "${APP_PORT:-80}:80"
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+      - laravel_storage:/storage/app
+    networks:
+      - horn_track_network
+    env_file:
+      - ".env"
+    depends_on:
+      pgsql:
+        condition: service_healthy
+
+  pgsql:
+    image: 'postgres:17'
+    restart: unless-stopped
+    environment:
+      PGPASSWORD: '${DB_PASSWORD:-secret}'
+      POSTGRES_DB: '${DB_DATABASE}'
+      POSTGRES_USER: '${DB_USERNAME}'
+      POSTGRES_PASSWORD: '${DB_PASSWORD:-secret}'
+    #ports:
+    #  - '5432:5432'
+    volumes:
+      - pgsql_data:/var/lib/postgresql/data
+    networks:
+      - horn_track_network
+    healthcheck:
+      test:
+        - CMD
+        - pg_isready
+        - '-q'
+        - '-d'
+        - '${DB_DATABASE}'
+        - '-U'
+        - '${DB_USERNAME}'
+      retries: 3
+      timeout: 5s
+
+networks:
+  horn_track_network:
+
+volumes:
+  laravel_storage:
+  caddy_data:
+  caddy_config:
+  pgsql_data:

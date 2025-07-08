@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+
+@tailwind utilities;
+
+@theme {
+    --primary-color: #AACA36;
+    --secondary-color: #1C2366;
+}
+
+@layer utilities {
+
+    .letter-spacing-fluid {
+        letter-spacing: calc(2px + 2 * (100vw - 1680px) / 880);
+    }
+
+    .font-display-content {
+        font-family: "Roboto Light", sans-serif;
+    }
+
+    .letter-spacing-title {
+        letter-spacing: calc(3px + 2 * (100vw - 1680px) / 880);
+    }
+
+    .font-display-title {
+        font-family: "Karla", sans-serif;
+    }
+}

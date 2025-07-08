@@ -1,0 +1,7 @@
+POST http://localhost/api/loans
+Content-Type: application/x-www-form-urlencoded
+
+email = bryan.heutschi@jobtrek.ch &
+content = new-element
+
+###
