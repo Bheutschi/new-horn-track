@@ -60,15 +60,15 @@ export function ListPC() {
                                         ["Prêter un PC", <ArrowLeftRight/>],
                                         ["Liste des PCS", <List/>]
                                     ].map(([label, icon]) => (
-                                            <SidebarMenuItem key={label as string}>
-                                                <SidebarMenuButton asChild>
-                                                    <a href="#" className="flex items-center gap-2">
-                                                        {icon}
-                                                        <span>{label}</span>
-                                                    </a>
-                                                </SidebarMenuButton>
-                                            </SidebarMenuItem>
-                                        ))}
+                                        <SidebarMenuItem key={label as string}>
+                                            <SidebarMenuButton asChild>
+                                                <a href="#" className="flex items-center gap-2">
+                                                    {icon}
+                                                    <span>{label}</span>
+                                                </a>
+                                            </SidebarMenuButton>
+                                        </SidebarMenuItem>
+                                    ))}
                                 </SidebarMenu>
                             </SidebarGroupContent>
                         </SidebarGroup>
@@ -115,8 +115,8 @@ export function ListPC() {
                                     <TableCell className="text-right">
                                         <Badge variant="default">OK</Badge>
                                     </TableCell>
-                                    <TableCell className="text-right text-blue-600 underline cursor-pointer">
-                                        détails
+                                    <TableCell className="text-right text-blue-500 underline font-semibold">
+                                        <a href="#">détails</a>
                                     </TableCell>
                                 </TableRow>
                             </TableBody>

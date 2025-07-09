@@ -49,7 +49,9 @@ export const Primary: Story = {
                         <TableCell>Nom Prénom</TableCell>
                         <TableCell className="text-right">Nom Prénom</TableCell>
                         <TableCell className="text-right">08:13:41 01-07-2025</TableCell>
-                        <TableCell className="text-right">détails</TableCell>
+                        <TableCell className="text-right text-blue-500 underline font-semibold">
+                            <a href="#">détails</a>
+                        </TableCell>
                     </TableRow>
                 </TableBody>
             </Table>
@@ -74,7 +76,9 @@ export const Secondary: Story = {
                         <TableCell>HP</TableCell>
                         <TableCell>EliteBook 845 G9</TableCell>
                         <TableCell className="text-right">Parfait</TableCell>
-                        <TableCell className="text-right">détails</TableCell>
+                        <TableCell className="text-right text-blue-500 underline font-semibold">
+                            <a href="#">détails</a>
+                        </TableCell>
                     </TableRow>
                 </TableBody>
             </Table>
@@ -101,7 +105,9 @@ export const Tertiary: Story = {
                         <TableCell className="text-right">
                             <Badge variant={'default'}>OK</Badge>
                         </TableCell>
-                        <TableCell className="text-right">détails</TableCell>
+                        <TableCell className="text-right text-blue-500 underline font-semibold">
+                            <a href="#">détails</a>
+                        </TableCell>
                     </TableRow>
                 </TableBody>
             </Table>

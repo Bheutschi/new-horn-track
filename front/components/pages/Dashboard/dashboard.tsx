@@ -170,8 +170,9 @@ export function Dashboard() {
                                         <TableCell>Soufiane Kefif</TableCell>
                                         <TableCell className="text-right">Semhar Ghirmay</TableCell>
                                         <TableCell className="text-right">08:13:41 01-07-2025</TableCell>
-                                        <TableCell
-                                            className="text-right text-blue-600 underline cursor-pointer">détails</TableCell>
+                                        <TableCell className="text-right text-blue-500 underline font-semibold">
+                                            <a href="#">détails</a>
+                                        </TableCell>
                                     </TableRow>
                                 </TableBody>
                             </Table>
