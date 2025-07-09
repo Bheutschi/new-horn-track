@@ -33,6 +33,7 @@ import {
 import {
     Button
 } from "../../ui/Button/button";
+import * as React from "react";
 
 export function Pret() {
     return (
@@ -44,14 +45,14 @@ export function Pret() {
                 <Sidebar collapsible="none" side="left" variant="sidebar">
                     <SidebarContent>
                         <SidebarGroup>
-                            <Title color="green">
-                                Application
-                            </Title>
+                            <Title color="green">HornTrack</Title>
                             <SidebarGroupContent>
                                 <SidebarMenu>
-                                    {[["Home", <House/>], ["Prêter un PC", <ArrowLeftRight/>], ["Liste des PCS",
-                                        <List/>]]
-                                        .map(([label, icon]) => (
+                                    {[
+                                        ["Home", <House/>],
+                                        ["Prêter un PC", <ArrowLeftRight/>],
+                                        ["Liste des PCS", <List/>]
+                                    ].map(([label, icon]) => (
                                             <SidebarMenuItem key={label as string}>
                                                 <SidebarMenuButton asChild>
                                                     <a href="#" className="flex items-center gap-2">
@@ -67,7 +68,9 @@ export function Pret() {
                     </SidebarContent>
                     <SidebarFooter>
                         <SidebarMenu>
-                            {[["Logout", <LogOutIcon/>]].map(([label, icon]) => (
+                            {[
+                                ["Logout", <LogOutIcon/>]
+                            ].map(([label, icon]) => (
                                 <SidebarMenuItem>
                                     <SidebarMenuButton asChild>
                                         <a href="#" className="flex items-center gap-2">

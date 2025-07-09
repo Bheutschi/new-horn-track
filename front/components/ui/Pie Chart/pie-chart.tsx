@@ -376,7 +376,7 @@ export function ChartPie({data}: { data: typeof chartData }) {
     return (
         <ChartContainer
             config={chartConfig}
-            className="[&_.recharts-pie-label-text]:fill-foreground mx-auto aspect-square max-h-[250px] pb-0"
+            className="[&_.recharts-pie-label-text]:fill-foreground mx-auto aspect-square h-[180px] w-[190px] pb-0"
         >
             <RechartsPrimitive.PieChart>
                 <ChartTooltip content={<ChartTooltipContent hideLabel/>}/>

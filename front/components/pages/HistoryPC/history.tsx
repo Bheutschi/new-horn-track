@@ -45,9 +45,7 @@ export function History() {
                 <Sidebar collapsible="none" side="left" variant="sidebar">
                     <SidebarContent>
                         <SidebarGroup>
-                            <Title color="green">
-                                Application
-                            </Title>
+                            <Title color="green">HornTrack</Title>
                             <SidebarGroupContent>
                                 <SidebarMenu>
                                     {[
@@ -70,7 +68,9 @@ export function History() {
                     </SidebarContent>
                     <SidebarFooter>
                         <SidebarMenu>
-                            {[['Logout', <LogOutIcon/>]].map(([label, icon]) => (
+                            {[
+                                ['Logout', <LogOutIcon/>]
+                            ].map(([label, icon]) => (
                                 <SidebarMenuItem key={label as string}>
                                     <SidebarMenuButton>
                                         <a href="#" className="flex items-center gap-2">

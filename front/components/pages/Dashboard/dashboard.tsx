@@ -82,30 +82,32 @@ export function Dashboard() {
                 <Sidebar collapsible="none" side="left" variant="sidebar">
                     <SidebarContent>
                         <SidebarGroup>
-                            <Title color="green">
-                                Application
-                            </Title>
+                            <Title color="green">HornTrack</Title>
                             <SidebarGroupContent>
                                 <SidebarMenu>
-                                    {[["Home", <House/>], ["Prêter un PC", <ArrowLeftRight/>], ["Liste des PCS",
-                                        <List/>]]
-                                        .map(([label, icon]) => (
-                                            <SidebarMenuItem key={label as string}>
-                                                <SidebarMenuButton asChild>
-                                                    <a href="#" className="flex items-center gap-2">
-                                                        {icon}
-                                                        <span>{label}</span>
-                                                    </a>
-                                                </SidebarMenuButton>
-                                            </SidebarMenuItem>
-                                        ))}
+                                    {[
+                                        ["Home", <House/>],
+                                        ["Prêter un PC", <ArrowLeftRight/>],
+                                        ["Liste des PCS", <List/>]
+                                    ].map(([label, icon]) => (
+                                        <SidebarMenuItem key={label as string}>
+                                            <SidebarMenuButton asChild>
+                                                <a href="#" className="flex items-center gap-2">
+                                                    {icon}
+                                                    <span>{label}</span>
+                                                </a>
+                                            </SidebarMenuButton>
+                                        </SidebarMenuItem>
+                                    ))}
                                 </SidebarMenu>
                             </SidebarGroupContent>
                         </SidebarGroup>
                     </SidebarContent>
                     <SidebarFooter>
                         <SidebarMenu>
-                            {[["Logout", <LogOutIcon/>]].map(([label, icon]) => (
+                            {[
+                                ["Logout", <LogOutIcon/>]
+                            ].map(([label, icon]) => (
                                 <SidebarMenuItem key={label}>
                                     <SidebarMenuButton asChild>
                                         <a href="#" className="flex items-center gap-2">
@@ -127,24 +129,19 @@ export function Dashboard() {
                 {/* 📈 Top cards section */}
                 <div className="flex justify-center items-center gap-10">
                     {/* 🟦 Card 1 - Graphique */}
-                    <Card
-                        className="h-[300px] w-[400px]">
+                    <Card className="h-[300px] w-[400px]">
                         <Title size="secondary" margin="default">PC</Title>
-                        <div className="w-[180px] h-[180px]">
-                            <ChartPie data={chartData} config={chartConfig}/>
-                        </div>
+                        <ChartPie data={chartData} config={chartConfig}/>
                     </Card>
 
                     {/* 🟩 Card 2 - Disponibles */}
-                    <Card
-                        className="h-[250px] w-[400px]">
+                    <Card className="h-[250px] w-[400px]">
                         <Title size="secondary" margin="default" className="text-[#AACA36]">PC disponible</Title>
                         <h1 className="text-5xl font-bold text-[#AACA36]">13</h1>
                     </Card>
 
                     {/* 🟨 Card 3 - En prêt */}
-                    <Card
-                        className="h-[250px] w-[400px]">
+                    <Card className="h-[250px] w-[400px]">
                         <Title size="secondary" margin="default">PC en prêt</Title>
                         <h1 className="text-5xl font-bold text-[#1C2366]">4</h1>
                     </Card>

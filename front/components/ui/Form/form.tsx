@@ -1,20 +1,20 @@
 import {
     Card,
     CardContent
-} from "@/components/ui/Card/card";
+} from "../Card/card";
 
 import {
     Input,
     InputProps
-} from "@/components/ui/Input/input";
+} from "../Input/input";
 
 import {
     Button
-} from "@/components/ui/Button/button";
+} from "../Button/button";
 
 import {
     Title
-} from "@/components/ui/Title/title";
+} from "../Title/title";
 
 interface FormProps {
     inputProps: InputProps;

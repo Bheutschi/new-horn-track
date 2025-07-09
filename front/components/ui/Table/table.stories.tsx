@@ -1,7 +1,7 @@
 import type {
     Meta,
     StoryObj
-} from '@storybook/react-vite';
+} from '@/storybook/react-vite';
 
 import {
     Table,
@@ -14,7 +14,7 @@ import {
 
 import {
     Badge
-} from "@/components/ui/Badge/badge";
+} from "../Badge/badge";
 
 const meta: Meta<typeof Table> = {
     title: 'Components/Table',
@@ -46,8 +46,8 @@ export const Primary: Story = {
                     <TableRow>
                         <TableCell className="font-bold">JT-23-09-12</TableCell>
                         <TableCell>HP</TableCell>
-                        <TableCell>Soufiane Kefif</TableCell>
-                        <TableCell className="text-right">Semhar Ghirmay</TableCell>
+                        <TableCell>Nom Prénom</TableCell>
+                        <TableCell className="text-right">Nom Prénom</TableCell>
                         <TableCell className="text-right">08:13:41 01-07-2025</TableCell>
                         <TableCell className="text-right">détails</TableCell>
                     </TableRow>
@@ -98,7 +98,7 @@ export const Tertiary: Story = {
                         <TableCell className="font-bold">JT-23-09-13</TableCell>
                         <TableCell>HP</TableCell>
                         <TableCell>EliteBook 845 G9</TableCell>
-                        <TableCell className="text-center">
+                        <TableCell className="text-right">
                             <Badge variant={'default'}>OK</Badge>
                         </TableCell>
                         <TableCell className="text-right">détails</TableCell>

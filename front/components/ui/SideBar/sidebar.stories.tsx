@@ -12,7 +12,7 @@ import {
 
 import {
     Title
-} from "@/components/ui/Title/title";
+} from "../Title/title";
 
 import {
     Sidebar,
@@ -23,7 +23,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
     SidebarProvider
-} from "@/components/ui/SideBar/sidebar";
+} from "./sidebar";
 
 const meta: Meta<typeof Sidebar> = {
     title: 'Components/Sidebar',
@@ -47,7 +47,7 @@ export const Primary: Story = {
             <Sidebar collapsible="none" side="left" variant="sidebar">
                 <SidebarContent>
                     <SidebarGroup>
-                        <Title color="green" variant="secondary">
+                        <Title color="green">
                             Application
                         </Title>
                         <SidebarGroupContent>
@@ -71,7 +71,7 @@ export const Primary: Story = {
                 <SidebarFooter>
                     <SidebarMenu>
                         {[["Logout", <LogOutIcon/>]].map(([label, icon]) => (
-                            <SidebarMenuItem key={label}>
+                            <SidebarMenuItem key={label as string}>
                                 <SidebarMenuButton asChild>
                                     <a href="#" className="flex items-center gap-2">
                                         {icon}

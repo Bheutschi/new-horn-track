@@ -52,14 +52,14 @@ export function ListPC() {
                 <Sidebar collapsible="none" side="left" variant="sidebar">
                     <SidebarContent>
                         <SidebarGroup>
-                            <Title color="green">
-                                Application
-                            </Title>
+                            <Title color="green">HornTrack</Title>
                             <SidebarGroupContent>
                                 <SidebarMenu>
-                                    {[["Home", <House/>], ["Prêter un PC", <ArrowLeftRight/>], ["Liste des PCS",
-                                        <List/>]]
-                                        .map(([label, icon]) => (
+                                    {[
+                                        ["Home", <House/>],
+                                        ["Prêter un PC", <ArrowLeftRight/>],
+                                        ["Liste des PCS", <List/>]
+                                    ].map(([label, icon]) => (
                                             <SidebarMenuItem key={label as string}>
                                                 <SidebarMenuButton asChild>
                                                     <a href="#" className="flex items-center gap-2">
@@ -75,7 +75,9 @@ export function ListPC() {
                     </SidebarContent>
                     <SidebarFooter>
                         <SidebarMenu>
-                            {[["Logout", <LogOutIcon/>]].map(([label, icon]) => (
+                            {[
+                                ["Logout", <LogOutIcon/>]
+                            ].map(([label, icon]) => (
                                 <SidebarMenuItem key={label}>
                                     <SidebarMenuButton asChild>
                                         <a href="#" className="flex items-center gap-2">

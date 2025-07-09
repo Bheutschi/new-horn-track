@@ -13,11 +13,11 @@ import {
 
 import {
     useIsMobile
-} from "@/hooks/use-mobile"
+} from "../../../hooks/use-mobile"
 
 import {
     cn
-} from "@/lib/utils"
+} from "../../../lib/utils"
 
 import {
     Sheet,
@@ -25,14 +25,14 @@ import {
     SheetDescription,
     SheetHeader,
     SheetTitle,
-} from "@/components/ui/SideBar/sheet"
+} from "./sheet"
 
 import {
     Tooltip,
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
-} from "@/components/ui/SideBar/tooltip"
+} from "./tooltip"
 
 type SidebarContextProps = {
     state: "expanded" | "collapsed"
