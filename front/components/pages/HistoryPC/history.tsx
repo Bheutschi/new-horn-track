@@ -101,7 +101,7 @@ export function History() {
                                         <TableHead>E-Mail du bénéficiaire</TableHead>
                                         <TableHead>Prêteur</TableHead>
                                         <TableHead className="text-right">État de retour</TableHead>
-                                        <TableHead className="text-right">Début du prêt</TableHead>
+                                        <TableHead className="text-left">Début du prêt</TableHead>
                                         <TableHead className="text-right">Réceptionnaire</TableHead>
                                         <TableHead className="text-right">Retour du prêt</TableHead>
                                     </TableRow>

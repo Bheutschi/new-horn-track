@@ -3,7 +3,9 @@ import type {
     StoryObj
 } from 'storybook-react-rsbuild';
 
-import {History} from './history';
+import {
+    History
+} from './history';
 
 const meta: Meta<typeof History> = {
     title: 'pages/Historique des prêts',
