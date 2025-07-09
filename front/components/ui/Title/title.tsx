@@ -19,7 +19,7 @@ export const titleVariants = cva(
                 secondary:
                     "text-[1.3em]",
                 thirdary:
-                    "text-[1em]"
+                    "text-[1em] font-bold"
             },
             color: {
                 green:

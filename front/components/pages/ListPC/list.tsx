@@ -52,7 +52,7 @@ export function ListPC() {
                 <Sidebar collapsible="none" side="left" variant="sidebar">
                     <SidebarContent>
                         <SidebarGroup>
-                            <Title color="green" variant="secondary">
+                            <Title color="green">
                                 Application
                             </Title>
                             <SidebarGroupContent>

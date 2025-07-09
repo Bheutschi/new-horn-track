@@ -44,7 +44,7 @@ export function Pret() {
                 <Sidebar collapsible="none" side="left" variant="sidebar">
                     <SidebarContent>
                         <SidebarGroup>
-                            <Title color="green" variant="secondary">
+                            <Title color="green">
                                 Application
                             </Title>
                             <SidebarGroupContent>
@@ -68,7 +68,7 @@ export function Pret() {
                     <SidebarFooter>
                         <SidebarMenu>
                             {[["Logout", <LogOutIcon/>]].map(([label, icon]) => (
-                                <SidebarMenuItem key={label}>
+                                <SidebarMenuItem>
                                     <SidebarMenuButton asChild>
                                         <a href="#" className="flex items-center gap-2">
                                             {icon}
