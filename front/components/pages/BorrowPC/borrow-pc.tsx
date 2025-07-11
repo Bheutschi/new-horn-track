@@ -53,15 +53,15 @@ export function Pret() {
                                         ["Prêter un PC", <ArrowLeftRight/>],
                                         ["Liste des PCS", <List/>]
                                     ].map(([label, icon]) => (
-                                            <SidebarMenuItem key={label as string}>
-                                                <SidebarMenuButton asChild>
-                                                    <a href="#" className="flex items-center gap-2">
-                                                        {icon}
-                                                        <span>{label}</span>
-                                                    </a>
-                                                </SidebarMenuButton>
-                                            </SidebarMenuItem>
-                                        ))}
+                                        <SidebarMenuItem key={label as string}>
+                                            <SidebarMenuButton asChild>
+                                                <a href="#" className="flex items-center gap-2">
+                                                    {icon}
+                                                    <span>{label}</span>
+                                                </a>
+                                            </SidebarMenuButton>
+                                        </SidebarMenuItem>
+                                    ))}
                                 </SidebarMenu>
                             </SidebarGroupContent>
                         </SidebarGroup>
@@ -87,22 +87,20 @@ export function Pret() {
 
             {/* 📊 Content */}
             <div className="flex flex-col flex-1 w-full py-5 px-4 overflow-y-auto gap-10 justify-center items-center">
-                <Title>Prêter un ordinateur</Title>
-                <div className="flex flex-col items-center justify-center w-fit">
-                    <Card>
-                        <CardContent>
-                            <Input label="UUID"/>
-                            <div className="flex flex-row gap-6 items-center justify-center w-full">
-                                <hr className="w-1/5 border-[#1C2366] h-0.5 border"/>
-                                <p>ou</p>
-                                <hr className="w-1/5 border-[#1C2366] h-0.5 border"/>
-                            </div>
+                <Card>
+                    <Title>Prêt et retour d’ordinateurs</Title>
+                    <CardContent>
+                        <Input label="UUID"/>
+                        <div className="flex flex-row gap-6 items-center justify-center w-full">
+                            <hr className="w-1/5 border-[#1C2366] h-0.5 border"/>
+                            <p>ou</p>
+                            <hr className="w-1/5 border-[#1C2366] h-0.5 border"/>
+                        </div>
 
-                            <Input label="Nom de l'ordinateur"/>
-                            <Button size="sm" variant="primary">Prêt</Button>
-                        </CardContent>
-                    </Card>
-                </div>
+                        <Input label="Nom de l'ordinateur"/>
+                        <Button size="sm" variant="primary">Prêt</Button>
+                    </CardContent>
+                </Card>
             </div>
         </div>
     )
