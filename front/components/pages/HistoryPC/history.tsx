@@ -54,7 +54,7 @@ export function History() {
                                         ['Liste des PCS', <List/>]
                                     ].map(([label, icon]) => (
                                         <SidebarMenuItem key={label as string}>
-                                            <SidebarMenuButton>
+                                            <SidebarMenuButton asChild>
                                                 <a href="#" className="flex items-center gap-2">
                                                     {icon}
                                                     <span>{label}</span>
@@ -72,7 +72,7 @@ export function History() {
                                 ['Logout', <LogOutIcon/>]
                             ].map(([label, icon]) => (
                                 <SidebarMenuItem key={label as string}>
-                                    <SidebarMenuButton>
+                                    <SidebarMenuButton asChild>
                                         <a href="#" className="flex items-center gap-2">
                                             {icon}
                                             <span>{label}</span>
